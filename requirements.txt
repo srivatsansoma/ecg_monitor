@@ -1,0 +1,15 @@
+We are trying to build an Hospital Patient Monitoring Simulator web Application. 
+
+1) This Ecosystem will have this Web based Simulator which pushes the data through an USB Port in the running Computer which will be sent to the AUDRINO MEGA hardware board. This Arduino will further process it and then connects to the User Defined Cloud (like platform like AWS IoT/Azure IoT/Google Cloud IoT or similar) the JASON Payload with the help of ESP32.
+
+2) The Web Application will be connected with Arduino through the USB / Serial Ports Available in the computer which will be chosen through an drop Down Box. The User will be able to choose the Ports and send the Data. User will also be able to test if the Ports are open to use and is reachable to start the communication and it will be indicated with an Colourful Icon that Shows Green for good to communicate, RED for Port is already engaged or cannot be used and YELLOW if it is not ready or GREAY if it is not even tested.
+
+3) User will deploy the necessary Bootstrap code for Arduino that will make it ready for further process. Arduino will also reply back to this Simulator and User Will be highlighted with an ICON if the Arduino is ready for further process - Various Indication like RED for not ready, GREEN for Ready, YELLOW for not reachable and many more as necessary. This Connection will be kept validated between the Web Application and the Arduino bord every half second. 
+
+4) User Web Application will have option to type the end point (like platform like AWS IoT/Azure IoT/Google Cloud IoT or similar) and test if that is reachable. This Connection will also be verified and indicated like above.
+
+5) Once the communication Channel is completely ready (Web Simulator to Arduino to ESP32 to Cloud) user will be notified and will be updated on the entire pathway and where the failure has happened if any.
+
+6) On the Web Simulator User will be able to generate the various Vitals like Temperature, Body Heat, Heart rate/ECG, blood pressure, respiratory rate, oxygen saturation (SpO2), and can extend to advanced metrics like end-tidal CO2 (EtCO2), invasive pressures, cardiac output, EEG, and anesthetic gases and many more.
+7) User should be able to configure the above vitals for its minimum and maximum values and also should be able to configure the frequency at which the data needs to be transmitted to the Cloud. Once the user initiates through a button to Start / Stop the transmission, data will be kept on sent through the Serial Port to the Arduino and then through the EP32 to the Cloud.
+8) User will be able to change the values at run time and the Web Simulator should be able to take that values and keep transmitting.

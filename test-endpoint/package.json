@@ -1,0 +1,9 @@
+{
+  "name": "test-endpoint",
+  "version": "1.0.0",
+  "description": "Localhost test endpoint for the simulator",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
